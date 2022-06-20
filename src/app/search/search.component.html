@@ -1,0 +1,532 @@
+
+<div class="par-search container">
+<section class="search">
+    <div class="container ul-tabs">
+        <div class="row ">
+            <div class="col-12">
+                <div class="cust-nav">
+                    <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                        <div class="father" (click)="show1()">
+                            <li class="nav-item nav-li" role="presentation" >
+                                <button class="nav-but " id="pills-hotel-tab" data-bs-toggle="pill"
+                                 data-bs-target="#pills-hotel" type="button" role="tab" 
+                                 aria-controls="pills-hotel" aria-selected="true">Hotel</button>
+                              </li>
+                              <span class="btn-layer">
+                                <button class="nav-but child " id="pills-hotel-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-hotel" type="button" role="tab" 
+                                aria-controls="pills-hotel" aria-selected="true">Hotel</button></span>
+                                <div *ngIf="display1"  class="play"></div>
+                        </div>
+                        <div>
+                            <div class="father" (click)="show2()">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-but" id="pills-flights-tab" data-bs-toggle="pill" 
+                                    data-bs-target="#pills-flights" type="button" role="tab" 
+                                    aria-controls="pills-flights" aria-selected="false">Flights</button>
+                                </li>
+                                <span class="btn-layer">
+                                    <button class="nav-but child " id="pills-flights-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-flights" type="button" role="tab" 
+                                    aria-controls="pills-flights" aria-selected="true">Flights</button></span>
+                                    <div *ngIf="display2"  class="play"></div>
+                                </div>
+                        </div>
+                        <div>
+                            <div class="father" (click)="show3()">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-but" id="pills-cuirse-tab" data-bs-toggle="pill" 
+                                    data-bs-target="#pills-cuirse" type="button" role="tab" 
+                                    aria-controls="pills-cuirse" aria-selected="false">Cuirse</button>
+                                  </li>
+                                  <span class="btn-layer">
+                                    <button class="nav-but child " id="pills-cuirse-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-cuirse" type="button" role="tab" 
+                                    aria-controls="pills-cuirse" aria-selected="true">Cuirse</button></span>
+                                    <div *ngIf="display3"  class="play"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="father" (click)="show4()">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-but" id="pills-cars-tab" data-bs-toggle="pill" 
+                                    data-bs-target="#pills-cars" type="button" role="tab" 
+                                    aria-controls="pills-cars" aria-selected="false">Cars</button>
+                                </li>
+                                <span class="btn-layer">
+                                    <button class="nav-but child " id="pills-cars-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-cars" type="button" role="tab" 
+                                    aria-controls="pills-cars" aria-selected="true">Cars</button></span>
+                                    <div *ngIf="display4"  class="play"></div>       
+                            </div>
+                        </div>
+                      </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="tab-content container py-3" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-hotel" role="tabpanel" aria-labelledby="pills-hotel-tab">
+            <form action="">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-lg-3 col-md-6">
+                        
+                            <div class="form group">
+                                <label class="fs-14 text-custom-black fw-500">Your Destination</label>
+                                 <input type="text" placeholder="Your Destination and Hotel Name" 
+                                 class="form-control form-control-custom">
+                        
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label class="fs-14 text-custom-black fw-500">Check In</label>
+                                        <div class="parent">
+                                            <input type="text" placeholder="mm/dd/yy"
+                                             class="form-control form-control-custom">
+                                             
+                                            <span class="cust-icon"><i  class="far fa-calendar "></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <label class="fs-14 text-custom-black fw-500">Check Out</label>
+                                        <div class="parent">
+                                            <input type="text" placeholder="mm/dd/yy"
+                                             class="form-control form-control-custom">
+                                             
+                                            <span class="cust-icon"><i  class="far fa-calendar "></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="row ">
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label class="fs-14 text-custom-black fw-500">Rooms</label>
+                                        <div class="group-form  room-select">
+                                            <select class="custom-select form-control form-control-custom" name=">" id="">
+                                                <option class="cust-opt">01</option>
+                                                <option class="cust-opt">02</option>
+                                            </select>
+                                            <span class="arrow-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label class="fs-14 text-custom-black fw-500">Adults</label>
+                                        <div class="group-form  room-select">
+                                            <select class="custom-select form-control form-control-custom" name=">" id="">
+                                                <option class="cust-opt">01</option>
+                                                <option class="cust-opt">02</option>
+                                            </select>
+                                            <span class="arrow-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <label class="fs-14 text-custom-black fw-500">Kids</label>
+                                        <div class="group-form  room-select">
+                                            <select class="custom-select form-control form-control-custom" name=">" id="">
+                                                <option class="cust-opt">01</option>
+                                                <option class="cust-opt">02</option>
+                                            </select>
+                                            <span class="arrow-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <a class="nav-link btnslid " href="#">Search Now
+                                <span class="btnslidhov"><a>Search Now</a></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--second tab-->
+        <div class="tab-pane fade" id="pills-flights" role="tabpanel" aria-labelledby="pills-flights-tab">
+            <form action="">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="form group">
+                            <label class="fs-14 text-custom-black fw-500">Leaving From</label>
+                             <input type="text" placeholder="city, distirct or specific airpot" 
+                             class="form-control form-control-custom">
+                    
+                        </div>
+                        <div class="form group py-3">
+                            <label class="fs-14 text-custom-black fw-500">Going From</label>
+                             <input type="text" placeholder="city, distirct or specific airpot" 
+                             class="form-control form-control-custom">
+                    
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500">Departing On</label>
+                                    <div class="parent">
+                                        <input type="text" placeholder="mm/dd/yy"
+                                         class="form-control form-control-custom">
+                                         
+                                        <span class="cust-icon"><i  class="far fa-calendar "></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500"></label>
+                                    <div class="group-form mt-2 parent">
+                                        <select class="custom-select form-control form-control-custom" name=">" id="">
+                                            <option class="cust-opt">Anytime</option>
+                                            <option class="cust-opt">Morning</option>
+                                        </select>
+                                        <span class="cust-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500">Arriving On</label>
+                                    <div class="parent">
+                                        <input type="text" placeholder="mm/dd/yy"
+                                         class="form-control form-control-custom">
+                                         
+                                        <span class="cust-icon"><i  class="far fa-calendar "></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500"></label>
+                                    <div class="group-form mt-2 parent">
+                                        <select class="custom-select form-control form-control-custom" name=">" id="">
+                                            <option class="cust-opt">Anytime</option>
+                                            <option class="cust-opt">Morning</option>
+                                        </select>
+                                        <span class="cust-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500">Adults</label>
+                                    <div class="group-form  room-select">
+                                        <select class="custom-select form-control form-control-custom" name=">" id="">
+                                            <option class="cust-opt">01</option>
+                                            <option class="cust-opt">02</option>
+                                        </select>
+                                        <span class="arrow-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500">Kids</label>
+                                    <div class="group-form  room-select">
+                                        <select class="custom-select form-control form-control-custom" name=">" id="">
+                                            <option class="cust-opt">01</option>
+                                            <option class="cust-opt">02</option>
+                                        </select>
+                                        <span class="arrow-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form group">
+                                    <label class="fs-14 text-custom-black fw-500">Promocode</label>
+                                     <input type="text" placeholder="type here" 
+                                     class="form-control form-control-custom">
+                            
+                                </div>
+                            </div>
+                        </div>
+                        <!--second row-->
+                        <div class="row py-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500">Infants</label>
+                                    <div class="group-form  parent">
+                                        <select class="custom-select form-control form-control-custom" name=">" id="">
+                                            <option class="cust-opt">01</option>
+                                            <option class="cust-opt">02</option>
+                                        </select>
+                                        <span class="cust-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 pt-3">
+                                <div class="pt-2 mt-1">
+                                    <a class="nav-link btnslid " href="#">Search Now
+                                        <span class="btnslidhov"><a>Search Now</a></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="pills-cuirse" role="tabpanel" aria-labelledby="pills-cuirse-tab">
+            <form action="">
+                <div class="row">
+                    <!--start fisrst-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="form group">
+                            <label class="fs-14 text-custom-black fw-500">Your Destination</label>
+                             <input type="text" placeholder="enter a destination or hotel name" 
+                             class="form-control form-control-custom">
+                    
+                        </div>
+                    </div>
+                    <!--end first-->
+
+                    <!--start second-->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500">Departure Date</label>
+                                    <div class="parent">
+                                        <input type="text" placeholder="mm/dd/yy"
+                                         class="form-control form-control-custom">
+                                         
+                                        <span class="cust-icon"><i  class="far fa-calendar "></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500">Cruise Length</label>
+                                    <div class="group-form  parent">
+                                        <select class="custom-select form-control form-control-custom" name=">" id="">
+                                            <option class="cust-opt">1-2 Nights</option>
+                                            <option class="cust-opt">3-4 Nights</option>
+                                        </select>
+                                        <span class="cust-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end second-->
+
+                    <!--start third-->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500">Cruise Line</label>
+                                    <div class="group-form  parent">
+                                        <select class="custom-select form-control form-control-custom" name=">" id="">
+                                            <option class="cust-opt">Azamara Club Cruises</option>
+                                            <option class="cust-opt">Carnival Cruise Lines</option>
+                                            <option class="cust-opt">Celebrity Cruises</option>
+                                            <option class="cust-opt">Costa Cruise Lines</option>
+                                            <option class="cust-opt">Cruise & Maritime Voyages</option>
+                                            <option class="cust-opt">Crystal Cruises</option>
+                                            <option class="cust-opt">Cunard Line Ltd.</option>
+                                            <option class="cust-opt">Disney Cruise Line</option>
+                                            <option class="cust-opt">Holland America Line</option>
+                                            <option class="cust-opt">Hurtigruten Cruise Line</option>
+                                            <option class="cust-opt">MSC Cruises</option>
+                                            <option class="cust-opt">Norwegian Cruise Line</option>
+                                            <option class="cust-opt">Oceania Cruises</option>
+                                            <option class="cust-opt">Orion Expedition Cruises</option>
+                                            <option class="cust-opt">P&O Cruises</option>
+                                            <option class="cust-opt">Paul Gauguin Cruises</option>
+                                            <option class="cust-opt">Peter Deilmann Cruises</option>
+                                            <option class="cust-opt">Princess Cruises</option>
+                                            <option class="cust-opt">Regent Seven Seas Cruises </option>
+                                            <option class="cust-opt">Royal Caribbean International</option>
+                                            <option class="cust-opt">Seabourn Cruise Line</option>
+                                            <option class="cust-opt">Silversea Cruises</option>
+                                            <option class="cust-opt">Star Clippers</option>
+                                            <option class="cust-opt">Star Clippers</option>
+                                            <option class="cust-opt">Thomson Cruises</option>
+                                            <option class="cust-opt">Viking River Cruises</option>
+                                            <option class="cust-opt">Windstar Cruises</option>
+                                        </select>
+                                        <span class="cust-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 pt-3">
+                                <div class="pt-2 mt-1">
+                                    <a class="nav-link btnslid " href="#">Search Now
+                                        <span class="btnslidhov"><a>Search Now</a></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end third-->
+                </div>
+            </form>
+        </div>
+        <!--forth tab-->
+        <div class="tab-pane fade" id="pills-cars" role="tabpanel" aria-labelledby="pills-cars-tab">
+            
+            <form action="">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="form group">
+                            <label class="fs-14 text-custom-black fw-500">Pick Up</label>
+                             <input type="text" placeholder="city, distirct or specific airpot" 
+                             class="form-control form-control-custom">
+                    
+                        </div>
+                        <div class="form group py-3">
+                            <label class="fs-14 text-custom-black fw-500">Drop Off</label>
+                             <input type="text" placeholder="city, distirct or specific airpot" 
+                             class="form-control form-control-custom">
+                    
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500">Pick Up Date/Time</label>
+                                    <div class="parent">
+                                        <input type="text" placeholder="mm/dd/yy"
+                                         class="form-control form-control-custom">
+                                         
+                                        <span class="cust-icon"><i  class="far fa-calendar "></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500"></label>
+                                    <div class="group-form mt-2 parent">
+                                        <select class="custom-select form-control form-control-custom" name=">" id="">
+                                            <option class="cust-opt">Anytime</option>
+                                            <option class="cust-opt">Morning</option>
+                                        </select>
+                                        <span class="cust-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500">Drop Off Date/Time</label>
+                                    <div class="parent">
+                                        <input type="text" placeholder="mm/dd/yy"
+                                         class="form-control form-control-custom">
+                                         
+                                        <span class="cust-icon"><i  class="far fa-calendar "></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500"></label>
+                                    <div class="group-form mt-2 parent">
+                                        <select class="custom-select form-control form-control-custom" name=">" id="">
+                                            <option class="cust-opt">Anytime</option>
+                                            <option class="cust-opt">Morning</option>
+                                        </select>
+                                        <span class="cust-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500">Adults</label>
+                                    <div class="group-form  room-select">
+                                        <select class="custom-select form-control form-control-custom" name=">" id="">
+                                            <option class="cust-opt">01</option>
+                                            <option class="cust-opt">02</option>
+                                        </select>
+                                        <span class="arrow-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500">Kids</label>
+                                    <div class="group-form  room-select">
+                                        <select class="custom-select form-control form-control-custom" name=">" id="">
+                                            <option class="cust-opt">01</option>
+                                            <option class="cust-opt">02</option>
+                                        </select>
+                                        <span class="arrow-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form group">
+                                    <label class="fs-14 text-custom-black fw-500">Promocode</label>
+                                     <input type="text" placeholder="type here" 
+                                     class="form-control form-control-custom">
+                            
+                                </div>
+                            </div>
+                        </div>
+                        <!--second row-->
+                        <div class="row py-3">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="fs-14 text-custom-black fw-500">Car Type</label>
+                                    <div class="group-form  parent">
+                                        <select class="custom-select form-control form-control-custom" name=">" id="">
+                                            <option class="cust-opt">01</option>
+                                            <option class="cust-opt">02</option>
+                                        </select>
+                                        <span class="cust-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 pt-3">
+                                <div class="pt-2 mt-1">
+                                    <a class="nav-link btnslid " href="#">Search Now
+                                        <span class="btnslidhov"><a>Search Now</a></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+         </div>
+      </div>
+</section>
+
+</div>
+
+
+
+
+
+  
+

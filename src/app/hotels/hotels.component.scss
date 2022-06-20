@@ -1,0 +1,200 @@
+
+.hotel{
+    background-color: #f5f5f5;
+    padding-top: 100px;
+    margin-top: 50px;
+}
+
+.hotel-content h3{
+    font-size: 28px;
+}
+
+p{
+    position: relative;
+    line-height: 1.8;
+}
+p i{
+    color: #01b7f2;
+}
+
+p i::after{
+    content: '';
+    width: 80px;
+    height: 2px;
+    display: block;
+    background-color: #01b7f2;
+    position: absolute;
+    top: 48%;
+    left: 15px;
+}
+.hotel-content p{
+    color: #838383;
+}
+
+
+.ctr-carsol{
+    position: relative;
+}
+.btn-carsol{
+    position: absolute;
+    bottom: 10%;
+    right: 2%;
+}
+.ctr-carsol .bt-left{
+    background-color: #2d3e52;
+    border-radius: 0;
+    color: #fff;
+    width: 45px;
+    height: 35px;
+    border: none;
+    
+}
+.ctr-carsol .bt-left:hover{
+    background-color: #01b7f2;
+}
+.ctr-carsol .bt-right{
+    background-color: #2d3e52;
+    border-radius: 0;
+    color: #fff;
+    width: 45px;
+    height: 35px;
+    border: none;
+}
+.ctr-carsol .bt-right:hover{
+    background-color: #01b7f2;
+}
+
+
+/*test*/
+#slider-container{
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    position: relative;
+}
+#slider-container .slide{
+    width: 100%;
+}
+#next{
+    position: absolute;
+    top: 45%;
+    right: 0
+}
+
+#prev{
+    position: absolute;
+    top: 45%;
+    left: 0
+}
+
+.cars{
+    height: 500px;
+}
+.img-content{
+    padding: 20px;
+    background-color: #fff;
+    a{
+        color: #000;
+    }
+    .hotel-name{
+        font-size: 18px;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 500;
+    }
+    .hotel-name:hover{
+        color: #01b7f2;
+    }
+    small{
+        font-size: 10px;
+        color: #838383;
+    }
+    p{
+        color:#7db921;
+        font-size: 18px;
+        font-weight: 500;
+    
+    }
+    
+    .btn-view a{
+        background-color: #2d3e52;
+        border-radius: 50px;
+        padding: 3px 20px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        
+    }
+    .btn-view a:hover{
+
+        background-color: #01b7f2;
+    }
+    
+
+    .btn-book a{
+        background-color: #fff;
+        border: 1px solid #01b7f2;
+        border-radius: 50px;
+        padding: 3px 20px;
+        color: #01b7f2;
+        font-size: 14px;
+        font-weight: 500;
+        
+    }
+    .btn-book a:hover{
+       background-color: #01b7f2;
+       color: #fff;
+    }
+    
+}
+
+.bc-img{
+    position: relative;
+    overflow: hidden;
+    
+}
+.img-layer{
+    width: 90%;
+    height: 90%;
+    background-color: #01b7f2;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transform: translatex(-110%);
+    text-align: center;
+    
+    
+    i{
+        margin-top:25%;
+        color: #fff;
+        font-size: 20px;
+    }
+    
+}
+
+.bc-img:hover .img-layer{
+    transform: translatex(0%);
+    transition: all 1s;
+    cursor: pointer;
+}
+.bc-img:hover  img{
+    transform: scale(1.2);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+
+.taha{
+    width: 100%;
+    height: 500px;
+}
+
+
+//testing carousel
+.bt-left{
+    background-color: #2d3e52;
+    color: #fff;
+    position: relative;
+    top: 0;
+    left: 0;
+}

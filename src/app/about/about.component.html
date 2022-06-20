@@ -1,0 +1,61 @@
+
+<section class="about py-3">
+
+    <div class="container">
+        <div class="row parent ">
+            <div class="col-xl-5 col-lg-6">
+
+                <div class="videocontent">
+                    <span class="bclayer">shawki</span>
+                    <div class="imgcont">
+                        <img src="assets/about.jpg" class="img-fluid" alt="">
+                        <a class="video-btn" (click)="playVideo()" >
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-7 col-lg-6">
+                
+                <div class="about-content">
+                    <h3>About Us</h3>
+                    <p><i class="fa-solid fa-plane"></i>
+                        
+                    </p>
+                    <p class="text1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                         Lorem Ipsum has been the industry's standard dummy text.</p>
+                    <p class="text2">On the other hand, we denounce with righteous indignation the foult anuals dislike men who
+                         are so beguiled and demoralized by the nuhaiicharms of pleasure of the moment,
+                          so blinded by desire, that they cannot foresee the pain and trouble that are bound toen sue;
+                         and equal blame belongs to those who fail in their duty.</p>
+                    
+                    <div  >
+                        <ul>
+                            <li><i class="fa-solid fa-hand-point-right"></i>Personalized Service</li>
+                            <li><i class="fa-solid fa-hand-point-right"></i>24x7 Support</li>
+                            <li><i class="fa-solid fa-hand-point-right"></i>Best Price</li>
+                            <li><i class="fa-solid fa-hand-point-right"></i>Trusted Company</li>
+                           
+                            
+                        </ul>
+                    </div>
+                </div>
+                <a class="nav-link btnslid " href="#">LEARN MORE
+                    <span class="btnslidhov"><a class="text-delay">LEARN MORE</a></span>
+                </a>
+
+            </div>
+            <div class="fram"   >
+                <i class="fa-solid fa-xmark close-icon" (click)="playVideo()" *ngIf="check"></i>
+                <iframe *ngIf="check" src="//www.youtube.com/embed/TKnufs85hXk?autoplay=1" allowfullscreen >
+                    
+                </iframe>
+            </div>
+        </div>
+        
+        
+    </div>
+
+</section>
+
