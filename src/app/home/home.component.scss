@@ -141,3 +141,59 @@ span a{
 .wordcol{
     color: #01b7f2;
 }
+
+.btn-next{
+    
+    cursor: pointer;
+    position: absolute;
+    right: -5%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    z-index: 12345;
+    
+}
+.btn-next:hover{
+    background-color: #01b7f2;
+}
+.btn-prev{
+    cursor: pointer;
+    position: absolute;
+    left: -5%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    z-index: 12345;
+    
+   
+}
+.btn-prev:hover{
+    background-color: #01b7f2;
+}
+
+.slide:hover .btn-prev{
+    
+    animation-name: moveRight;
+  animation-duration: .4s;  
+  animation-fill-mode: forwards;
+}
+.slide:hover .btn-next{
+    
+    animation-name: moveLeft;
+  animation-duration: .4s;  
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes moveRight {
+    from {left: -3%;}
+    to {left: 2%; }
+  }
+  @keyframes moveLeft {
+    from {right: -3%;}
+    to {right: 2%; }
+  }

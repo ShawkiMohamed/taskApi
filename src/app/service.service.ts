@@ -11,7 +11,7 @@ export class ServiceService {
 
   constructor( private service:HttpClient) { }
 
-  getNews():Observable<any>
+  getData():Observable<any>
   {
     return this.service.get("http://satafood.codesroots.com:3000/api/branches//homepage")
   }

@@ -42,7 +42,7 @@ export class HotelsComponent implements OnInit {
 
   //slides:any = document.getElementsByClassName("slide");
 //slideIndex:number = 1;
-sliders:Array<any> = []
+hotels:Array<any> = []
 // code carousel by me
 /*
  
@@ -58,8 +58,8 @@ sliders:Array<any> = []
  */
   constructor( private _service:ServiceService) {
 
-    _service.getNews().subscribe( data => this.sliders = data.sliders)
-    console.log(this.sliders)
+    _service.getData().subscribe( data => this.hotels = data.newoffers)
+    console.log(this.hotels)
 
    }
 
